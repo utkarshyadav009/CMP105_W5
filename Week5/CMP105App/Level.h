@@ -3,6 +3,8 @@
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
+#include  "Framework/Animation.h"
+#include "Zombie.h"
 #include <string>
 #include <iostream>
 
@@ -24,4 +26,8 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+	Zombie zombie;
+	float speedx = 100.0;
+	float speedy = 100.0;
+	sf::Texture zombTexture;
 };
